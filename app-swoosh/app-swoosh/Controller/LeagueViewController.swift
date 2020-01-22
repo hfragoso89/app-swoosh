@@ -81,7 +81,7 @@ class LeagueViewController: UIViewController {
     
     func selectLeague(leagueType: String){
         player.desiredLeague = leagueType
-        UIView.animate(withDuration: 1.0, delay: 0.0, animations: {
+        UIView.animate(withDuration: 1.0, delay: 0.5, animations: {
             self.nextBtn.isEnabled = true
         })
     }
@@ -94,6 +94,14 @@ class LeagueViewController: UIViewController {
     
     @IBAction func unwindIntoLeagueVC(unwindSegue:UIStoryboardSegue){
         
+    }
+    
+    //Prepare for segue
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let skillVC = segue.destination as? SkillViewController {
+            skillVC.player = player
+        }
     }
 
 }
