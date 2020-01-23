@@ -347,6 +347,9 @@
                                                 <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="beginnerBtnTapped:" destination="AaO-mN-FV8" eventType="touchUpInside" id="f68-gu-4Yp"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aOL-b1-1wh" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
                                         <rect key="frame" x="195" y="0.0" width="145" height="54"/>
@@ -366,6 +369,9 @@
                                                 <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="ballerBtnTapped:" destination="AaO-mN-FV8" eventType="touchUpInside" id="Uvo-aT-0ch"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -417,6 +423,11 @@
                         <viewLayoutGuide key="safeArea" id="E8t-sh-UL1"/>
                     </view>
                     <navigationItem key="navigationItem" id="Qf0-BU-ads"/>
+                    <connections>
+                        <outlet property="ballerBtn" destination="aOL-b1-1wh" id="H4F-Nx-a4c"/>
+                        <outlet property="beginnerBtn" destination="bjZ-Fc-d5z" id="bIx-Cf-Sxx"/>
+                        <outlet property="finishBtn" destination="pQM-sB-mKf" id="Kk3-0G-UbN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dZr-7o-eVl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="fNc-ES-s6j" userLabel="Exit" sceneMemberID="exit"/>

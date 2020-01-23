@@ -14,6 +14,18 @@ class BorderButton: UIButton {
         super.awakeFromNib()
     }
     
+    func selectButton(){
+        self.titleLabel?.font = UIFont.systemFont(ofSize: 19, weight: .heavy)
+        self.borderWidth = 4.0
+        self.tintColor = UIColor.systemGray2
+    }
+    
+    func deselectButton(){
+        self.titleLabel?.font = UIFont.systemFont(ofSize: 19, weight: .medium)
+        self.borderWidth = 2.0
+        self.tintColor = UIColor.systemFill
+    }
+    
 }
 
 @IBDesignable extension UIButton {

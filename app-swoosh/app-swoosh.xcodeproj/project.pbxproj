@@ -87,8 +87,8 @@
 				6B6B56BB23CFFD360096E9BF /* View */,
 				6B6B56A723CFF8DF0096E9BF /* AppDelegate.swift */,
 				6B6B56A923CFF8DF0096E9BF /* SceneDelegate.swift */,
-				6B6B56AD23CFF8DF0096E9BF /* Main.storyboard */,
 				6B6B56B023CFF8E00096E9BF /* Assets.xcassets */,
+				6B6B56AD23CFF8DF0096E9BF /* Main.storyboard */,
 				6B6B56B223CFF8E00096E9BF /* LaunchScreen.storyboard */,
 				6B6B56B523CFF8E00096E9BF /* Info.plist */,
 			);
